@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>IST 400 | Lab 8 | Exercise 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+		<div id="exercise-2">
+			<div class="sigil">
+				<img src="img/wallpaper-baratheon.jpg" alt="Baratheon" />
+				<span>Baratheon</span>
+			</div>
+			<div class="sigil">
+				<img src="img/wallpaper-greyjoy.jpg" alt="Greyjoy" />
+				<span>Greyjoy</span>
+			</div>
+			<div class="sigil">
+				<img src="img/wallpaper-lannister.jpg" alt="Lannister" />
+				<span>Lannister</span>
+			</div>
+			<div class="sigil">
+				<img src="img/wallpaper-stark.jpg" alt="Stark" />
+				<span>Stark</span>
+			</div>
+			<div class="sigil">
+				<img src="img/wallpaper-targaryen.jpg" alt="Targaryen" />
+				<span>Targaryen</span>
+			</div>
+		</div>
+		<div class="source">Images Courtesy of hbo.com</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".sigil:nth-of-type(1)").click(function(){
+                	$(".sigil:first-of-type span").toggle();
+                });
+                $(".sigil:nth-of-type(2)").click(function(){
+                	$(".sigil:nth-of-type(2) span").toggle();
+                });
+                $(".sigil:nth-of-type(3)").click(function(){
+                	$(".sigil:nth-of-type(3) span").toggle();
+                });
+                $(".sigil:nth-of-type(4)").click(function(){
+                	$(".sigil:nth-of-type(4) span").toggle();
+                });
+                $(".sigil:nth-of-type(5)").click(function(){
+                	$(".sigil:nth-of-type(5) span").toggle();
+                });
+            });
+        </script>
+    </body>
+</html>

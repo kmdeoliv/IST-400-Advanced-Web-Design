@@ -1,0 +1,336 @@
+@import  "https://fonts.googleapis.com/css?family=Passion+One|PT+Sans+Narrow";
+
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,canvas,iframe,img,svg,video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: .2em 0;
+    background: #ccc;
+    color: #000;
+    padding: .2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+    font: 1em/1.4 'PT Sans Narrow',sans-serif;
+}
+
+.exercise-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    width: 145px;
+    height: 145px;
+    background-color: blue;
+    margin: 7.5px;
+}
+
+.scale-me:hover {
+    transform: scale(2.0);
+    transition: 2s;
+}
+
+.rotate-me:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+.skew-me:hover {
+    transform: skew(20deg);
+    transation: 2s;
+}
+
+.translate-me:hover {
+    transform: translate(145px);
+    transation: 2s;
+}
+
+.exercise-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row.one,.row.two {
+    width: 900px;
+    display: flex;
+}
+
+.row.one article.column.one {
+    background-image: url(../img/row1-column1.jpg);
+}
+
+.row.one article.column.two {
+    background-image: url(../img/row1-column2.jpg);
+}
+
+.row.one article.column.three {
+    background-image: url(../img/row1-column3.jpg);
+}
+
+.row.two article.column.one {
+    background-image: url(../img/row2-column1.jpg);
+}
+
+.row.two article.column.two {
+    background-image: url(../img/row2-column2.jpg);
+}
+
+.row.two article.column.three {
+    background-image: url(../img/row2-column3.jpg);
+}
+
+.column {
+    flex: 0 2 33.33%;
+    margin: 7.5px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 230px;
+    transition: background-color 1s linear;
+    background-color: rgba(0,0,0,0.0);
+}
+
+h1,p,ul {
+    visibility: hidden;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1;
+    right: -285px;
+    position: relative;
+}
+
+p {
+    visibility: hidden;
+    position: relative;
+    left: -285px;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -30px;
+}
+
+li {
+    flex: 0 1 50%;
+    height: 30px;
+    background-color: #55ACEE;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+li + li {
+    background-color: #3B5998;
+    margin-left: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fa {
+    margin-right: 3px;
+}
+
+.column:hover {
+    flex: 1 0 50%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.column:hover:before {
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    content: "";
+    position: absolute;
+}
+
+.column:hover h1 {
+    visibility: visible;
+    transition: 1s;
+    transition-delay: 1s;
+    right: 0;
+}
+
+.column:hover p {
+    visibility: visible;
+    transition: 1s;
+    transition-delay: 1s;
+    left: 0;
+}
+
+.column:hover ul {
+    visibility: visible;
+    position: absolute;
+    transition: 1s;
+    transition-delay: 2s;
+    bottom: 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+    
+}
+
+@media print,(-o-min-device-pixel-ratio: 5/4),(-webkit-min-device-pixel-ratio: 1.25),(min-resolution: 120dpi) {
+    
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+    *,:before,:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,h2,h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,h3 {
+        page-break-after: avoid;
+    }
+}

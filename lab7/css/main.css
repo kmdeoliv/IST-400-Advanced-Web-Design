@@ -1,0 +1,263 @@
+@import url(http://fonts.googleapis.com/css?family=Bangers|Patua+One);
+@import url(font-awesome.min.css);
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+	body, html { overflow:hidden; }
+
+    /* animation: loading-screen 1s 4s forwards; */
+	
+	.loading-screen { animation-name: loading-screen; animation-duration: 1s; animation-fill-mode:forwards; animation-delay: 4s;background-color:#000; position:fixed; z-index:3; top:0; left:0; width:100%; height:100vh; z-index:1; }
+	.loading-screen > div { width:100%; text-align:center; position:absolute; top:50%; transform:translateY(-50%); color:#fff; }
+	.loading-screen h1 { animation: heading-animation 0.5s forwards; font:5em/1 'Bangers', cursive; }
+	.loading-screen .progress-bar {animation: progress-animation 0.5s forwards;}
+    .loading-screen .progress-bar > div { width:20px; height:20px; border-radius:50%; background-color:#fff; display:inline-block; margin:20px 10px; }
+    .loading-screen .progress-bar > div:nth-of-type(1){ animation: dots 1s 0s backwards infinite;}
+    .loading-screen .progress-bar > div:nth-of-type(2){ animation: dots 1s 0.25s backwards infinite;}
+    .loading-screen .progress-bar > div:nth-of-type(3){ animation: dots 1s 0.50s backwards infinite;}
+
+	.main header { position:fixed; top:0; left:0; width:100%; z-index:2; display:flex; justify-content:space-between; align-items:center; }
+	.main header h1 { font:50px/50px bangers; color:#000; margin:20px 50px; }
+	.main header nav ul { list-style:none; margin:0; padding:20px 0; }
+	.main header nav ul li { display:inline-block; margin:0 20px; font-family:'Patua One'; text-transform:uppercase; color:#000; }
+	
+	.social-media { position:fixed; z-index:1; left:0; top:50%; transform:translateY(-50%); }
+	.social-media ul { list-style:none; margin:0; padding:0; }
+	.social-media ul li { margin:10px; opacity:0; border-radius:50%; width:40px; height:40px; text-align:center; color:#fff; line-height:40px; transform:translateX(-100%); }
+	.social-media ul li:nth-child(1) { animation: social-animation 1s 5s forwards; background-color:#3b5998; }
+	.social-media ul li:nth-child(2) { animation: social-animation 1s 5.25s forwards; background-color:#00aced; }
+	.social-media ul li:nth-child(3) { animation: social-animation 1s 5.75s forwards; background-color:#cb2027; }
+	.social-media ul li:nth-child(4) { animation: social-animation 1s 6s forwards; background-color:#517fa4; }
+	
+	.slide { position:relative; }
+	.slide-image { height:100vh; background-size:cover; }
+	.slide-text { position:absolute; right:0; top:50%; transform:translate(100%, -50%); width:33.333%; background-color:orange; color:#fff; text-transform:uppercase; text-align:right; padding:20px 100px 20px 20px; font-family:'Patua One'; text-transform:uppercase; font-size:2em; }
+	.slide.one .slide-image { background-image:url(../img/9268605893_904b01b2d7_k.jpg); }
+	.slide.two .slide-image { background-image:url(../img/5839809283_40689b5fbe_o.jpg); }
+	.slide.three .slide-image { background-image:url(../img/9275892417_9889b73729_k.jpg); }
+	.slide.four .slide-image { background-image:url(../img/5830077506_13d7b2ab2c_o.jpg); }
+    .slide.slick-active .slide-image { animation: image-animation 10s infinite alternate; }
+	
+	.slide.slick-active .slide-text { /*transform:translate(0, -50%); transition:1s; */animation:text-animation 1s forwards;}
+	.slick-dots { position:absolute; bottom:50px; left:0; width:100%; list-style:none; margin:0; padding:0; text-align:center; }
+	.slick-dots li { display:inline-block; margin:0 10px; }
+	.slick-dots li button{ width:20px; height:20px; background:transparent; border:none; color:transparent; }
+	.slick-dots li button:before { content:"\f111"; font-family:fontawesome; color:#000; }
+	.slick-dots li.slick-active button:before { color:orange; }
+	.slick-dots li button:focus { outline:none; }
+
+    @keyframes loading-screen{
+        from {transform:translateY(0); opacity: 1;}
+        to {transform: translateY(-100%); opacity: 0}
+    }
+
+    @keyframes heading-animation{
+        from{transform: translateY(-200px); opacity: 0;}
+        to{transform:translateY(0); opacity:1;}
+    }
+
+    @keyframes progress-animation{
+        from{transform: translateY(200px); opacity: 0;}
+        to{transform: translateY(0); opacity:1;}
+    }
+    
+    @keyframes dots{
+        from{transform: scale(100%);}
+        to{ transform: scale(0);}
+    }
+
+    @keyframes social-animation{
+        from{transform: translateX(0); opacity: 0;}
+        to{transform: translateX(25%); opacity: 1;}
+    }
+
+     @keyframes image-animation{
+        from{transform: scale(1.0) translate(0, 0);}
+        to{transform: scale(1.2) translate(25px, 25px);}
+    }
+
+    @keyframes text-animation{
+        from{transform: translate(100%,-50%);}
+        to{transform: translate(0%,-50%);}
+    }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

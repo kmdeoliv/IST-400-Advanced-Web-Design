@@ -1,0 +1,269 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+	h1, ol, ul { margin:0; padding:0; }
+	img { display:inline-block; max-width:100%; }
+
+	/* Exercise 1 */
+	#example-1 p { font-weight:normal; }
+    #example-1 p.example-1 { font-weight:bolder; }
+
+	
+	/* Exercise 2 */
+	#family-tree p { font-weight:normal; }
+    #family-tree .great-grand-father:first-child p:last-child {font-weight:bolder;}
+	
+	/* Exercise 3 */
+    #root div:nth-of-type(2) p:first-of-type{font-weight: bold}
+	
+	/* Exercise 4 */
+	.exercise-4 .wrapper { max-width:1200px; margin:0 auto; min-height:100vh; display:flex; height:100%; }
+	.exercise-4 .header { flex:1; text-align:center; background-color:#efefef; padding:20px; }
+    .exercise-4 nav{ margin-top: 10px; }	
+    .exercise-4 nav i { display:none; font-size:20px; line-height:50px; padding-left:20px; }
+    .exercise-4 nav ul{ list-style: none; }
+    .exercise-4 nav ul li{ padding: 10px 0; border-bottom: 1px solid #d1d1d1; position:relative; }
+    .exercise-4 nav ul li:hover{ background-color: black; color: white }
+    .exercise-4 nav ul li ul{display: none; position: absolute; left: 100%; width: 250px; top: 0;}
+    .exercise-4 nav ul li:hover ul{display: block; }
+    .exercise-4 nav ul li:hover ul li{background-color: #888888}
+    .exercise-4 nav ul li:hover ul li:hover{background-color: red}
+	.exercise-4 .main { flex:4; padding:20px; }              
+	.exercise-4 .bottom { display:flex; }
+	.exercise-4 .bottom .article { flex:1; margin:10px; }
+
+	@media screen and (max-width:1000px) {
+		.exercise-4 .wrapper { flex-direction:column; }
+		.exercise-4 .header { display:flex; align-items:center; justify-content:space-between; background:none; }
+	    .exercise-4 nav{ margin-top: 0px; }   
+        .exercise-4 nav ul{ list-style: none; display: flex; flex-direction: row; }
+        .exercise-4 nav ul li{ padding: 10px; margin: 0 5px; border-bottom: 0; position:relative; }
+        .exercise-4 nav ul li:hover{ background-color: black; color: white }
+        .exercise-4 nav ul li ul{display: none; position: absolute; left: -150%; margin: 0 -10px; top:100%; width: 250px;}
+        .exercise-4 nav ul li:hover ul{display: block; }
+        .exercise-4 nav ul li:hover ul li{background-color: #888888}
+        .exercise-4 nav ul li:hover ul li:hover{background-color: red}
+    }
+
+	@media screen and (max-width:750px) {
+		.exercise-4 .header { position:relative; padding:0 20px;  } 
+		.exercise-4 .bottom { flex-direction:column; }
+		.exercise-4 .bottom .article { padding:10px 0; margin:0; display:flex; border-bottom:1px solid #ccc; }
+		.exercise-4 .bottom .article .image { width:33.3333%; }
+		.exercise-4 .bottom .article p { width:66.6666%; padding:0 10px; margin:0; }
+        .exercise-4 nav{ margin-top: 0px; }  
+        .exercise-4 nav i { display:block; font-size:20px; line-height:50px; padding-left:20px; }
+	    .exercise-4 nav ul{ display: none;}
+        .exercise-4 nav:hover ul { list-style: none; display: block; width: 100%;position: absolute; top: 100%; left: 0}
+        .exercise-4 nav:active ul { list-style: none; display: block; width: 100%;position: absolute; top: 100%; left: 0;}
+        .exercise-4 nav ul li{ background-color: #888888; padding: 10px; margin: 0 5px; border-bottom: 0; position:relative; }
+        .exercise-4 nav ul li:hover{ background-color: black; color: white }
+        .exercise-4 nav:hover ul li ul{display: none;}
+        .exercise-4 nav:active ul li ul {display: none;}
+    }
+	
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

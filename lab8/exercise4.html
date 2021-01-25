@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>IST 400 | Lab 8 | Exercise 4</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body id="exercise-4">
+		
+		<section id="baratheon" class="main-section transition">
+			<div class="inner">
+				<img src="img/baratheon.png" alt="Baratheon" />
+				<h1>Baratheon</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id massa placerat, semper odio nec, bibendum leo. Fusce ac augue consectetur, congue sapien sed, faucibus nulla. Fusce id ante non dolor lacinia dignissim. Quisque sodales, sem ac vestibulum elementum, sapien mi pulvinar ante, non vestibulum quam quam non nisl. Aenean at congue ligula, et tincidunt velit. Praesent et eros ut sem sodales vestibulum quis quis leo. Proin eu luctus tellus. In quis risus vel nisl sagittis mattis. Suspendisse tortor neque, condimentum et placerat vitae, imperdiet et elit. Phasellus quis pharetra felis, at pulvinar odio. Aliquam congue sapien sed libero condimentum aliquam. Praesent venenatis ante ornare nunc sagittis, ut venenatis purus convallis. Curabitur velit dui, faucibus in mauris id, consequat congue nibh.
+				</p>				
+				<i class="close-section icon-cancel-circled"></i>
+			</div>
+		</section>
+		
+		<section id="greyjoy" class="main-section transition">
+			<div class="inner">
+				<img src="img/greyjoy.png" alt="Greyjoy" />
+				<h1>Greyjoy</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id massa placerat, semper odio nec, bibendum leo. Fusce ac augue consectetur, congue sapien sed, faucibus nulla. Fusce id ante non dolor lacinia dignissim. Quisque sodales, sem ac vestibulum elementum, sapien mi pulvinar ante, non vestibulum quam quam non nisl. Aenean at congue ligula, et tincidunt velit. Praesent et eros ut sem sodales vestibulum quis quis leo. Proin eu luctus tellus. In quis risus vel nisl sagittis mattis. Suspendisse tortor neque, condimentum et placerat vitae, imperdiet et elit. Phasellus quis pharetra felis, at pulvinar odio. Aliquam congue sapien sed libero condimentum aliquam. Praesent venenatis ante ornare nunc sagittis, ut venenatis purus convallis. 
+				</p>
+				<i class="close-section icon-cancel-circled"></i>
+			</div>
+		</section>
+		
+		<section id="lannister" class="main-section transition">
+			<div class="inner">
+				<img src="img/lannister.png" alt="Lannister" />
+				<h1>Lannister</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id massa placerat, semper odio nec, bibendum leo. Fusce ac augue consectetur, congue sapien sed, faucibus nulla. Fusce id ante non dolor lacinia dignissim. Quisque sodales, sem ac vestibulum elementum, sapien mi pulvinar ante, non vestibulum quam quam non nisl. Aenean at congue ligula, et tincidunt velit. Praesent et eros ut sem sodales vestibulum quis quis leo. Proin eu luctus tellus. In quis risus vel nisl sagittis mattis. Suspendisse tortor neque, condimentum et placerat vitae, imperdiet et elit. Phasellus quis pharetra felis, at pulvinar odio. Aliquam congue sapien sed libero condimentum aliquam. Praesent venenatis ante ornare nunc sagittis, ut venenatis purus convallis. 
+				</p>				
+				<i class="close-section icon-cancel-circled"></i>
+			</div>
+		</section>
+		
+		<section id="tully" class="main-section transition">
+			<div class="inner">
+				<img src="img/tully.png" alt="Tully" />
+				<h1>Tully</h1>				
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id massa placerat, semper odio nec, bibendum leo. Fusce ac augue consectetur, congue sapien sed, faucibus nulla. Fusce id ante non dolor lacinia dignissim. Quisque sodales, sem ac vestibulum elementum, sapien mi pulvinar ante, non vestibulum quam quam non nisl. Aenean at congue ligula, et tincidunt velit. Praesent et eros ut sem sodales vestibulum quis quis leo. Proin eu luctus tellus. In quis risus vel nisl sagittis mattis. Suspendisse tortor neque, condimentum et placerat vitae, imperdiet et elit. Phasellus quis pharetra felis, at pulvinar odio. Aliquam congue sapien sed libero condimentum aliquam. Praesent venenatis ante ornare nunc sagittis, ut venenatis purus convallis. 
+				</p>
+				<i class="close-section icon-cancel-circled"></i>
+			</div>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+		 <script>
+            $(document).ready(function() {
+
+              	$("#baratheon img").click(function(){
+              		$("body").addClass("expanded");
+              		$(this).parents("section").addClass("active");				
+              	});
+
+              	$("#greyjoy img").click(function(){
+              		$("body").addClass("expanded");
+              		$(this).parents("section").addClass("active");				
+              	});
+
+              	$("#lannister img").click(function(){
+              		$("body").addClass("expanded");
+              		$(this).parents("section").addClass("active");				
+              	});
+
+              	$("#tully img").click(function(){
+              		$("body").addClass("expanded");
+              		$(this).parents("section").addClass("active");				
+              	});
+
+              	$(".close-section").click(function(){
+              		$("body").removeClass("expanded");
+              		$(this).parents("section").removeClass("active");				
+              	});
+
+
+            });
+        </script>
+    </body>
+</html>

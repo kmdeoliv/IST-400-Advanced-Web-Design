@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>IST 400 | Lab 8 | Exercise 3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+		<div id="exercise-3">
+			<ul>
+				<li id="tyrion-btn" class="btn">Tyrion Lannister</li>
+				<li id="eddard-btn" class="btn">Eddard Stark</li>
+				<li id="stannis-btn" class="btn">Stannis Baratheon</li>
+			</ul>	
+			<div id="tyrion-tab" class="tab">
+				<img src="http://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg" alt="Tyrion Lannister" />
+				<p>Tyrion Lannister is a major character in the first and second season. He is played by starring cast member Peter Dinklage and debuts in the series premiere. Tyrion Lannister is the youngest son of Lord Tywin Lannister, and uses his wit and intellect to overcome the prejudice he faces as a dwarf. He is falsely accused of the attempted assassination of Bran Stark and taken captive. His imprisonment by Catelyn Stark, even though he is eventually released after a trial by combat, causes the House Lannister to attack the Riverlands and triggers a conflict, which is then escalated into full war by the death of Robert Baratheon and arrest and execution of Eddard Stark. Tyrion rejoins the army of Tywin Lannister, and is shortly after sent by his father as acting Hand of the King to his newly crowned nephew Joffrey Baratheon, hoping he will rein him in. With him he takes a prostitute named Shae who he makes his mistress and comes to love. Under difficult conditions, Tyrion Lannister holds the city together, strengthens and organizes the city's defenses, and makes an alliance with House Martell. Tyrion is grievously injured during the Battle of Blackwater and afterwards loses his position as Hand when Tywin Lannister arrives to claim it.</p>
+			</div>
+			<div id="eddard-tab" class="tab">
+				<img src="http://img3.wikia.nocookie.net/__cb20110626030942/gameofthrones/images/9/9c/EddardStark.jpg" alt="Tyrion Lannister" />
+				<p>Eddard Stark, also known by his friends and family as Ned, is a major character in the first season. He is played by starring cast member Sean Bean and debuts in the series premiere.Eddard is the head of House Stark and Lord Paramount of the North. He is a dedicated husband and father, a loyal friend and an honourable lord. He becomes Hand of the King to his lifelong friend Robert Baratheon when the previous hand dies in suspicious circumstances. He follows his predecessors footsteps and uncovers an incestuous relationship between Queen Cersei Lannister and her brother Jaime Lannister. Robert dies after being injured while hunting and Eddard challenges the legitimacy of his successor Joffrey Baratheon. Eddard is betrayed by his political allies and arrested for treason. He confesses to the crime to protect his family, but is nevertheless executed. The conflict between House Stark and House Lannister sets the stage for the War of the Five Kings.</p>
+			</div>
+			<div id="stannis-tab" class="tab">
+				<img src="http://static.comicvine.com/uploads/original/14/148983/3250758-3321074645-Stann.jpg" alt="Tyrion Lannister" />
+				<p>Stannis Baratheon is a major character in the second season. He is played by starring cast member Stephen Dillane and debuts in "The North Remembers." He is mentioned in the first season but did not appear. Stannis Baratheon is the Lord of Dragonstone and the older of the two younger brothers of the late King Robert Baratheon, the younger being Renly Baratheon. Because of the revelation that Robert's heir Joffrey is not actually Robert's son, but a bastard born out of incest between Queen Cersei Lannister and her own brother Jaime Lannister, Stannis has claimed the Iron Throne and proclaimed himself the rightful King. As Robert had no trueborn children, only bastards, Stannis is indeed his lawful heir.</p>
+			</div>
+		</div>s
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+     			$("#tyrion-btn").addClass("active");
+              	$("#eddard-tab").css("display","none");
+              	$("#stannis-tab").css("display","none");
+
+              	$("#tyrion-btn").click(function(){
+              		$("#tyrion-btn").addClass("active");
+              		$("#eddard-btn").removeClass("active");
+              		$("#stannis-btn").removeClass("active");
+              		$("#tyrion-tab").css("display","block");
+	              	$("#eddard-tab").css("display","none");
+	              	$("#stannis-tab").css("display","none");				
+              	});
+
+
+              	$("#eddard-btn").click(function(){
+              		$("#eddard-btn").addClass("active");
+              		$("#tyrion-btn").removeClass("active");
+              		$("#stannis-btn").removeClass("active");
+              		$("#eddard-tab").css("display","block");
+	              	$("#tyrion-tab").css("display","none");
+	              	$("#stannis-tab").css("display","none");				
+              	});
+
+              	$("#stannis-btn").click(function(){
+              		$("#stannis-btn").addClass("active");
+              		$("#tyrion-btn").removeClass("active");
+              		$("#eddard-btn").removeClass("active");
+              		$("#stannis-tab").css("display","block");
+	              	$("#tyrion-tab").css("display","none");
+	              	$("#eddard-tab").css("display","none");				
+              	});
+            });
+        </script>
+    </body>
+</html>

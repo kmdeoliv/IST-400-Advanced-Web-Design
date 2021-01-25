@@ -1,0 +1,113 @@
+body{
+	margin: 10px;
+	padding: 0;
+}
+
+.flex-container { 
+	display:flex; 
+	height:200px;
+}	
+
+ .box{
+ 	margin: 10px;
+ 	background-color:#000;
+ }
+
+.flex-item-50 {
+ 	flex:0 1 50%;
+ 	background-color: #6495ED;
+ }
+
+ .flex-item-25 {
+ 	flex:0 1 25%;
+ 	background-color: #FF6347;
+ }
+
+ .flex-item-grow-1 {
+ 	flex:1 1 50%;
+ 	background-color: #FF6347;
+ }
+
+  .flex-item-40{
+ 	flex:0 1 40%;
+ 	background-color: #9370DB;
+ }
+
+ .flex-item-20{
+ 	flex:0 1 20%;
+ 	background-color: #9370DB;
+ }
+
+ .flex-item-33{
+	flex:0 1 33.33%;
+	background-color: #8FBC8F;
+ }
+
+.end{
+	margin-left: auto;
+}
+
+.mustard{
+	background-color: #DAA520;
+}
+
+.exercise-2{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.cards{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.card{
+	margin:20px;
+	flex:0 1 300px;
+
+}
+
+.exercise-3{
+	height: 100vh;
+	margin: 20px;
+}
+
+.flex-item-header {
+    background-color: #DADADA;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+ 
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+ 
+.content .flex-item-aside {
+    width: 200px;
+    height: 100%;
+    background-color: #DADADA;
+}
+ 
+ 
+.content .flex-item-main {
+    flex: 1;
+    border: 1px solid #DADADA;
+    margin: 0 20px;
+}
+ 
+.flex-item-footer {
+    width: 100%;
+    height: 200px;
+    background-color: #DADADA;
+    margin-top: 20px;
+}
+

@@ -1,0 +1,143 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container-1{
+	background-color: #000;
+	margin: 20px;
+	padding: 20px;
+	border: 10px solid yellow;
+}
+
+.inside-box{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	color: #fff;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.red-box{
+	background-color: red;
+}
+
+.green-box{
+	background-color: green;
+}	
+
+.blue-box{
+	background-color: blue;
+}
+
+.yellow-box{
+	background-color: yellow;
+}
+
+.black-box{
+	background-color: black;
+}
+
+.orange-box{
+	background-color: orange;
+}
+
+.container-2{
+	width: 500px;
+	color: white;
+}
+
+.inside-box2{
+	height: 100px;
+	position: relative;
+}
+
+.box-1{
+	right: -20px;
+}
+
+.box-2{
+	right: -30px;
+	top: -10px;
+}
+
+.box-3{
+	right: -40px;
+	top: -10px;
+}
+
+.box-4{
+	right: -50px;
+	top: -10px;
+}
+
+.box-5{
+	right: -60px;
+	top: -10px;
+}
+
+span{
+	margin: 10px 0 0 10px;
+	position: absolute;
+	
+}
+
+.container-3{
+	background-color: black;
+	margin: 100px auto;
+	width: 600px;
+	height: 300px;
+	position: relative;
+}
+
+.inside-box3{
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	color: white;
+	position: absolute;	
+}
+
+#box-6{
+	top: -10px;
+	left: -10px;
+}
+
+#box-7{
+	top: -10px;
+	right: -10px;
+}
+
+#box-8{
+	bottom: -10px;
+	right: -10px;
+}
+
+#box-9{
+	left: -10px;
+	bottom: -10px;
+}	
+
+
+.vh-100{
+	height: 100vh;
+}
+
+.vw-50{
+	width: 50%;
+}
+
+.vw-33{
+	width: 33.33%;
+}
